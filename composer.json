@@ -1,0 +1,17 @@
+{
+  "name": "mohammedabdoh/design_patterns_course",
+  "description": "This package holds the content of the course including source code, references and more",
+  "minimum-stability": "stable",
+  "license": "proprietary",
+  "authors": [
+    {
+      "name": "fox",
+      "email": "email@example.com"
+    }
+  ],
+  "autoload": {
+    "psr-4": {
+      "App\\": "src/"
+    }
+  }
+}
