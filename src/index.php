@@ -2,22 +2,28 @@
 
 require_once __DIR__.'/../vendor/autoload.php';
 
-use App\OOP\PHP\Relationship\ScienceTeacher;
-use App\OOP\PHP\Relationship\MathTeacher;
-use App\OOP\PHP\Relationship\Printer\HTMLPrinter;
-use App\OOP\PHP\Relationship\Student;
+use App\OOP\PHP\Relationship\Composition\House;
+use App\OOP\PHP\Relationship\Composition\Room;
+use App\OOP\PHP\Relationship\Composition\CPU;
+use App\OOP\PHP\Relationship\Composition\RAM;
+use App\OOP\PHP\Relationship\Composition\ComputerMachine;
 
-$mohammed = new ScienceTeacher('Mohammed Abdoh');
-$ibrahim = new MathTeacher('Ibrahim Mohammed');
+$room1 = new Room('White', 20);
+$room2 = new Room('LightGray', 30);
+$room3 = new Room('LightBlue', 25);
 
-//$printer = new HTMLPrinter();
-//var_dump($mohammed->sayWelcome($printer));
-//unset($mohammed);
-//$printer->setStringToBePrinted('This is a test string');
-//var_dump($printer->printToScreen());
+$house = new House([$room1, $room2, $room3]);
 
-$ahmed = new Student('Ahmed Ali');
-$ahmed->assignATempTeacher($mohammed);
-var_dump('Ahmed was assigned this by ' . $mohammed->getName() . ' | ' . $mohammed->evaluateStudentHomeWork($ahmed));
-$ahmed->assignATempTeacher($ibrahim);
-var_dump('Ahmed was assigned this by ' . $ibrahim->getName() . ' | ' . $ibrahim->evaluateStudentHomeWork($ahmed));
+$cpu = new CPU(3.6);
+$ram = new RAM(8);
+$pc = new ComputerMachine($cpu, $ram);
+
+var_dump($pc->dashboard());
+
+// Inheritance IS-A
+// Manager IS-A Employee
+// Aggregation HAS-A
+// Project HAS-A Developer
+// Composition PART-OF
+// Room PART-OF House
+// CPU PART-OF ComputerMachine
