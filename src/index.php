@@ -2,13 +2,11 @@
 
 require_once __DIR__.'/../vendor/autoload.php';
 
-use App\OOP\PHP\Patterns\Creational\FactoryMethod\DialogExample\Dialogs\SystemDialog;
-use App\OOP\PHP\Patterns\Creational\FactoryMethod\DialogExample\Dialogs\WebDialog;
-use App\OOP\PHP\Patterns\Creational\FactoryMethod\DialogExample\Dialogs\MobileDialog;
+use App\OOP\PHP\Patterns\Creational\FactoryMethod\ContentValidator\AppViewer\HTMLAppViewer;
+use App\OOP\PHP\Patterns\Creational\FactoryMethod\ContentValidator\AppViewer\XMLAppViewer;
 
-$systemDialog = new SystemDialog();
-$webDialog = new WebDialog();
-$mobileDialog = new MobileDialog();
-var_dump($systemDialog->renderDialog());
-var_dump($webDialog->renderDialog());
-var_dump($mobileDialog->renderDialog());
+$htmlViewer = new HTMLAppViewer();
+var_dump($htmlViewer->viewContentOnScreen());
+
+$xmlViewer = new XMLAppViewer();
+var_dump($xmlViewer->viewContentOnScreen());
