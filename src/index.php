@@ -2,11 +2,13 @@
 
 require_once __DIR__.'/../vendor/autoload.php';
 
-use App\Patterns\Creational\FactoryMethod\ContentValidator\AppViewer\HTMLAppViewer;
-use App\Patterns\Creational\FactoryMethod\ContentValidator\AppViewer\XMLAppViewer;
+use App\Patterns\Creational\Builder\Builders\ComputerCSBuilder;
+use App\Patterns\Creational\Builder\Builders\ComputerXLBuilder;
+use App\Patterns\Creational\Builder\Director;
 
-$htmlViewer = new HTMLAppViewer();
-var_dump($htmlViewer->viewContentOnScreen());
-
-$xmlViewer = new XMLAppViewer();
-var_dump($xmlViewer->viewContentOnScreen());
+$director = new Director(new ComputerCSBuilder());
+$computer = $director->makeComputer();
+var_dump($computer);
+$director->changeBuilder(new ComputerXLBuilder());
+$computer = $director->makeComputer();
+var_dump($computer);
