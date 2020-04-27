@@ -1,5 +1,5 @@
 <?php
-namespace App\Patterns\Creational\Builder\Computer\MotherBoard\MainParts;
+namespace App\Patterns\Creational\Builder\ComputerExample\Computer\MotherBoard\MainParts;
 
 class Disk
 {

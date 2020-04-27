@@ -1,10 +1,10 @@
 <?php
-namespace App\Patterns\Creational\Builder\Computer\Types;
+namespace App\Patterns\Creational\Builder\ComputerExample\Computer\Types;
 
-use App\Patterns\Creational\Builder\Computer\Keyboard;
-use App\Patterns\Creational\Builder\Computer\Monitor;
-use App\Patterns\Creational\Builder\Computer\MotherBoard\MotherBoard;
-use App\Patterns\Creational\Builder\Computer\Mouse;
+use App\Patterns\Creational\Builder\ComputerExample\Computer\Keyboard;
+use App\Patterns\Creational\Builder\ComputerExample\Computer\Monitor;
+use App\Patterns\Creational\Builder\ComputerExample\Computer\MotherBoard\MotherBoard;
+use App\Patterns\Creational\Builder\ComputerExample\Computer\Mouse;
 
 abstract class Computer
 {

@@ -2,9 +2,9 @@
 
 require_once __DIR__.'/../vendor/autoload.php';
 
-use App\Patterns\Creational\Builder\Builders\ComputerCSBuilder;
-use App\Patterns\Creational\Builder\Builders\ComputerXLBuilder;
-use App\Patterns\Creational\Builder\Director;
+use App\Patterns\Creational\Builder\ComputerExample\Builders\ComputerCSBuilder;
+use App\Patterns\Creational\Builder\ComputerExample\Builders\ComputerXLBuilder;
+use App\Patterns\Creational\Builder\ComputerExample\Director;
 
 $director = new Director(new ComputerCSBuilder());
 $computer = $director->makeComputer();

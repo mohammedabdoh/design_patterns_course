@@ -1,7 +1,7 @@
 <?php
-namespace App\Patterns\Creational\Builder;
+namespace App\Patterns\Creational\Builder\ComputerExample;
 
-use App\Patterns\Creational\Builder\Computer\Types\Computer;
+use App\Patterns\Creational\Builder\ComputerExample\Computer\Types\Computer;
 
 class Director
 {

@@ -1,7 +1,7 @@
 <?php
-namespace App\Patterns\Creational\Builder\Computer\Types;
+namespace App\Patterns\Creational\Builder\ComputerExample\Computer\Types;
 
-use App\Patterns\Creational\Builder\Computer\CoolingSystem;
+use App\Patterns\Creational\Builder\ComputerExample\Computer\CoolingSystem;
 
 class ComputerCS extends Computer implements ICoolingSystem
 {

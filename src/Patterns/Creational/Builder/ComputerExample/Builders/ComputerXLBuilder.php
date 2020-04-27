@@ -1,23 +1,23 @@
 <?php
-namespace App\Patterns\Creational\Builder\Builders;
+namespace App\Patterns\Creational\Builder\ComputerExample\Builders;
 
-use App\Patterns\Creational\Builder\Builder;
-use App\Patterns\Creational\Builder\Computer\CoolingSystem;
-use App\Patterns\Creational\Builder\Computer\Keyboard;
-use App\Patterns\Creational\Builder\Computer\Monitor;
-use App\Patterns\Creational\Builder\Computer\MotherBoard\MainParts\CPU;
-use App\Patterns\Creational\Builder\Computer\MotherBoard\MainParts\Disk;
-use App\Patterns\Creational\Builder\Computer\MotherBoard\MainParts\GPU;
-use App\Patterns\Creational\Builder\Computer\MotherBoard\MainParts\NetworkCard;
-use App\Patterns\Creational\Builder\Computer\MotherBoard\MainParts\RAM;
-use App\Patterns\Creational\Builder\Computer\MotherBoard\MainParts\Sockets;
-use App\Patterns\Creational\Builder\Computer\MotherBoard\MotherBoard;
-use App\Patterns\Creational\Builder\Computer\MotherBoard\Sockets\CType;
-use App\Patterns\Creational\Builder\Computer\MotherBoard\Sockets\USB;
-use App\Patterns\Creational\Builder\Computer\Mouse;
-use App\Patterns\Creational\Builder\Computer\Types\Computer;
-use App\Patterns\Creational\Builder\Computer\Types\ComputerXL;
-use App\Patterns\Creational\Builder\Computer\UPS;
+use App\Patterns\Creational\Builder\ComputerExample\Builder;
+use App\Patterns\Creational\Builder\ComputerExample\Computer\CoolingSystem;
+use App\Patterns\Creational\Builder\ComputerExample\Computer\Keyboard;
+use App\Patterns\Creational\Builder\ComputerExample\Computer\Monitor;
+use App\Patterns\Creational\Builder\ComputerExample\Computer\MotherBoard\MainParts\CPU;
+use App\Patterns\Creational\Builder\ComputerExample\Computer\MotherBoard\MainParts\Disk;
+use App\Patterns\Creational\Builder\ComputerExample\Computer\MotherBoard\MainParts\GPU;
+use App\Patterns\Creational\Builder\ComputerExample\Computer\MotherBoard\MainParts\NetworkCard;
+use App\Patterns\Creational\Builder\ComputerExample\Computer\MotherBoard\MainParts\RAM;
+use App\Patterns\Creational\Builder\ComputerExample\Computer\MotherBoard\MainParts\Sockets;
+use App\Patterns\Creational\Builder\ComputerExample\Computer\MotherBoard\MotherBoard;
+use App\Patterns\Creational\Builder\ComputerExample\Computer\MotherBoard\Sockets\CType;
+use App\Patterns\Creational\Builder\ComputerExample\Computer\MotherBoard\Sockets\USB;
+use App\Patterns\Creational\Builder\ComputerExample\Computer\Mouse;
+use App\Patterns\Creational\Builder\ComputerExample\Computer\Types\Computer;
+use App\Patterns\Creational\Builder\ComputerExample\Computer\Types\ComputerXL;
+use App\Patterns\Creational\Builder\ComputerExample\Computer\UPS;
 
 class ComputerXLBuilder extends Builder
 {

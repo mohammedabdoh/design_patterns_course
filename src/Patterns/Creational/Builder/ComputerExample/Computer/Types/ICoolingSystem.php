@@ -1,5 +1,5 @@
 <?php
-namespace App\Patterns\Creational\Builder\Computer\Types;
+namespace App\Patterns\Creational\Builder\ComputerExample\Computer\Types;
 
 interface ICoolingSystem
 {

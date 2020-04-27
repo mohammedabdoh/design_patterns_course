@@ -1,5 +1,5 @@
 <?php
-namespace App\Patterns\Creational\Builder\Computer\MotherBoard\Sockets;
+namespace App\Patterns\Creational\Builder\ComputerExample\Computer\MotherBoard\Sockets;
 
 class CType
 {

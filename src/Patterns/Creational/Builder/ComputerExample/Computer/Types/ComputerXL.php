@@ -1,8 +1,8 @@
 <?php
-namespace App\Patterns\Creational\Builder\Computer\Types;
+namespace App\Patterns\Creational\Builder\ComputerExample\Computer\Types;
 
-use App\Patterns\Creational\Builder\Computer\CoolingSystem;
-use App\Patterns\Creational\Builder\Computer\UPS;
+use App\Patterns\Creational\Builder\ComputerExample\Computer\CoolingSystem;
+use App\Patterns\Creational\Builder\ComputerExample\Computer\UPS;
 
 class ComputerXL extends Computer implements ICoolingSystem, IPower
 {

@@ -1,6 +1,5 @@
 <?php
-namespace App\Patterns\Creational\Builder\Computer;
-
+namespace App\Patterns\Creational\Builder\ComputerExample\Computer;
 
 class Mouse
 {
