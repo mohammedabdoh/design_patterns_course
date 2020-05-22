@@ -2,20 +2,23 @@
 
 require_once __DIR__.'/../vendor/autoload.php';
 
-use App\Patterns\Structural\Proxy\RouterInterface\Clients\Application1;
-use App\Patterns\Structural\Proxy\RouterInterface\Clients\Application2;
-use App\Patterns\Structural\Proxy\RouterInterface\RouterFactory;
-use App\Patterns\Structural\Proxy\RouterInterface\RouterProxy;
+use App\Patterns\Structural\Composite\DTOs\DataModelsDTO\OrderDTO;
+use App\Patterns\Structural\Composite\DTOs\DataModelsDTO\OrderOwnerDTO;
+use App\Patterns\Structural\Composite\DTOs\DataModelsDTO\AddressDTO;
+use App\Patterns\Structural\Composite\DTOs\DataModelsDTO\PurchaseBill;
 
-$app1 = new Application1(new DateTime('now'));
-$app2 = new Application2();
+$address1 = new AddressDTO('Al Ahram Street', '29A', '28987');
+$address2 = new AddressDTO('Cairo Street', '283', '3455');
+$address3 = new AddressDTO('Mansura Street', '9A-1', '2834');
 
-$router = new RouterProxy (
-    RouterFactory::createRouter(),
-    ['APP_1', 'APP_3', 'APP_4'],
-    $app2
-);
+$mohammed = new OrderOwnerDTO('Mohammed Abdoh', $address1);
+$ahmed = new OrderOwnerDTO('Ahmed Ali', $address2);
+$ibrahim = new OrderOwnerDTO('Ibrahim Abd El Salam', $address3);
 
-if($router->resolve('http://www.google.com')) {
-    $router->stream();
-}
+$order1 = new OrderDTO($mohammed, new DateTime('now'), 9382.23, 3);
+$order2 = new OrderDTO($mohammed, new DateTime('now'), 384.29, 8);
+$order3 = new OrderDTO($mohammed, new DateTime('now'), 112.98, 2);
+
+$bill = new PurchaseBill([$order1, $order2, $order3]);
+
+echo $bill;
